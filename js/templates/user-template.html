@@ -1,0 +1,35 @@
+<table>
+	<caption><%= rc.title %></caption>
+	<thead>
+		<tr>
+			<th data-comparator="detected_location_name" class="sort "><a href="">location</a></th>
+			<th data-comparator="distance_waves" class="sort number"><a href="">distance waves</a></th>
+			<th data-comparator="duration" class="sort number"><a href="">duration</a></th>
+			<th class="">surf id</th>
+			<th data-comparator="previous_location" class="sort"><a href="">previous location</a></th>
+			<th data-comparator="speed_max" class="sort number"><a href="">speed max</a></th>
+			<th data-comparator="start_timestamp" class="sort number"><a href="">start timestamp</a></th>
+			<th data-comparator="swell_direction" class="sort "><a href="">swell direction</a></th>
+			<th data-comparator="swell_size" class="sort number"><a href="">swell size</a></th>
+			<th data-comparator="wave_count" class="sort number"><a href="">wave count</a></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% _.each( rc.data, function( l, index ){ %>
+		<tr>
+			<td class="" colspan="" rowspan="" headers=""><%= l.detected_location_name %></td>
+			<td class="number" colspan="" rowspan="" headers=""><%= l.distance_waves %></td>
+			<td class="number" colspan="" rowspan="" headers=""><%= l.duration %></td>
+			<td class="" colspan="" rowspan="" headers=""><%= l.surf_id %></td>
+			<td class="" colspan="" rowspan="" headers=""><%= l.previous_location %></td>
+			<td class="number" colspan="" rowspan="" headers=""><%= l.speed_max %></td>
+			<td class="number" colspan="" rowspan="" headers=""><%= l.start_timestamp %></td>
+			<td class="" colspan="" rowspan="" headers=""><%= l.swell_direction %></td>
+			<td class="number" colspan="" rowspan="" headers=""><%= l.swell_size %></td>
+			<td class="number" colspan="" rowspan="" headers=""><%= l.wave_count %></td>
+		</tr>	
+		<% }); %>
+	</tbody>
+</table>
+<!-- <canvas id="canvas" width="600" height="700">
+</canvas> -->

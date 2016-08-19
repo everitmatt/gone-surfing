@@ -1,0 +1,14 @@
+<nav>
+    <a href="#global">Home</a>
+</nav>
+<nav>
+	<input class="location-filter" type="text" name="" value="" placeholder="">
+</nav>
+<nav>
+    <a href="#user/546a8e195101c0076728c57a">546a8e195101c0076728c57a</a>
+</nav>
+<nav>
+    <% _.each( rc, function( l, index ){ %>
+		<a href="#user/<%= l %>"><%= l %></a>	
+	<% }); %>
+</nav>

@@ -1,0 +1,25 @@
+{
+  "name": "gone-surfing",
+  "version": "1.0.0",
+  "description": "Web application for visualising global surfing data.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/everitmatt/gone-surfing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/everitmatt/gone-surfing/issues"
+  },
+  "homepage": "https://github.com/everitmatt/gone-surfing",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "mongoose": "^4.5.9",
+    "restify": "^4.1.1"
+  }
+}

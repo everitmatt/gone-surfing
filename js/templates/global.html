@@ -1,0 +1,23 @@
+//table of distinctLocations
+
+<table>
+	<caption>Distinct Surfing Locations</caption>
+	<thead>
+		<tr>
+			<th>name</th>
+			<th>latitude</th>
+			<th>longitude</th>
+			<th>surf count</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% _.each( rc, function( l, index ){ %>
+		<tr>
+		<td class="detected-location-name" colspan="" rowspan="" headers=""><a><%= l.detected_location_name %></a></td>
+			<td colspan="" rowspan="" headers=""><%= l.latitude %></td>
+			<td colspan="" rowspan="" headers=""><%= l.longitude %></td>
+			<td colspan="" rowspan="" headers=""><%= l.surf_count %></td>
+		</tr>	
+		<% }); %>
+	</tbody>
+</table>

@@ -1,0 +1,21 @@
+<table>
+	<caption>Distinct Surfing Locations</caption>
+	<thead>
+		<tr>
+			<th class="sort" data-comparator="detected_location_name"><a href="">name</a></th>
+			<th class="sort number" data-comparator="latitude">latitude</th>
+			<th class="sort number" data-comparator="longtude">longitude</th>
+			<th class="sort number" data-comparator="surf_count"><a href="">surf count</a></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% _.each( rc, function( l, index ){ %>
+		<tr>
+			<td class="detected-location-name" data-name="<%= l.detected_location_name %>" colspan="" rowspan="" headers=""><a href=""><%= l.detected_location_name %></a></td>
+			<td class="number" colspan="" rowspan="" headers=""><%= l.latitude %></td>
+			<td class="number" colspan="" rowspan="" headers=""><%= l.longitude %></td>
+			<td class="number" colspan="" rowspan="" headers=""><%= l.surf_count %></td>
+		</tr>	
+		<% }); %>
+	</tbody>
+</table>

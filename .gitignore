@@ -1,0 +1,8 @@
+config.js
+gone-surfing.sublime-project
+gone-surfing.sublime-workspace
+Procfile
+node_modules
+js/data
+shaders
+textures
